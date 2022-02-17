@@ -102,7 +102,6 @@ nav a:focus{
   /* Requirement 5 code here*/
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
   row-gap: 30px;
 }
 
@@ -118,27 +117,26 @@ nav a:focus{
 }
 
 
-.about, .clients, .method, .contant{
+.about, .clients, .method, .contact{
   grid-column: 2 / 3;
 }
 
 .about-image, .clients-image, .method-image, .contact-image{
   grid-column: 1 / span 3;
   max-height: 500px;
-  /* row-gap: 30px; */
   overflow: hidden;
 }
 
-#about, .about-image{
+.about, .about-image{
   grid-row: 1 / 2;
 }
-#clients, .clients-image{
+.clients, .clients-image{
   grid-row: 2 / 3;
 }
-#method, .method-image{
+.method, .method-image{
   grid-row: 3 / 4;
 }
-#contant, .contact-image{
+.contact, .contact-image{
   grid-row: 4 / 5;
 }
 
@@ -147,10 +145,8 @@ img{
 } 
 
 
-
 .text{
   align-self: center;
-  /* justify-self: center; */
   max-height: 25vh;
   overflow: scroll;
 }

@@ -102,6 +102,7 @@ nav a:focus{
   /* Requirement 5 code here*/
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
   row-gap: 30px;
 }
 
@@ -121,9 +122,12 @@ nav a:focus{
   grid-column: 2 / 3;
 }
 
-img{
-  width: 100%;
-} 
+.about-image, .clients-image, .method-image, .contact-image{
+  grid-column: 1 / span 3;
+  max-height: 500px;
+  /* row-gap: 30px; */
+  overflow: hidden;
+}
 
 #about, .about-image{
   grid-row: 1 / 2;
@@ -138,15 +142,11 @@ img{
   grid-row: 4 / 5;
 }
 
+img{
+  width: 100%;
+} 
 
 
-
-.about-image, .clients-image, .method-image, .contact-image{
-  max-height: 500px;
-  grid-column: 1 / 4;
-  row-gap: 30px;
-  overflow: hidden;
-}
 
 .text{
   align-self: center;
